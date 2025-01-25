@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 206);
+    min-height:102vh;
+}
+.container{
+    background-color: white;
+   border: 1px solid black;
+    border-radius: 2rem;
+    height: 40vh;
+  
+}
+.box{
+    padding: 2 rem;
+    margin:2rem;
+    
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.input {
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+select{
+    margin-top: 1rem
+}
+.output{
+    margin-top: 1rem;
+}
+button{
+    height: 2rem;
+    border-radius:0.75rem;
+    
+    margin-top: 2rem;
+
+}

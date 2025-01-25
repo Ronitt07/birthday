@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Card</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffc0cb, #fff);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #ffc0cb, #ff99cc, #ff66b2, #fff);
+        }
+
+        .content {
+            position: relative;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin: 0;
+            padding: 0.5em;
+            text-shadow: 2px 2px 5px #ff66b2;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin: 0.5em 0;
+        }
+
+        .content button {
+            background: #ff99cc;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px #ff66b2;
+            transition: background 0.3s;
+        }
+
+        .content button:hover {
+            background: #ff66b2;
+        }
+
+        .emojis {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .emojis span {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 10s linear infinite;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .emojis span:nth-child(1) {top: 20%; left: 10%; animation-duration: 8s; }
+        .emojis span:nth-child(2) { top: 30%;left: 30%; animation-duration: 10s; animation-delay: 0s; }
+        .emojis span:nth-child(3) {top: 80%;left: 50%; animation-duration: 12s; animation-delay: 0s; }
+        .emojis span:nth-child(4) { top: 91%;left: 70%; animation-duration: 14s; animation-delay: 0s; }
+        .emojis span:nth-child(5) { top: 48%;left: 90%; animation-duration: 16s; animation-delay: 0s; }
+        .emojis span:nth-child(1) {top: 84%; left: 10%; animation-duration: 8s; }
+        .emojis span:nth-child(2) { top: 67%;left: 30%; animation-duration: 10s; animation-delay: 0s; }
+        .emojis span:nth-child(3) {top: 80%;left: 50%; animation-duration: 12s; animation-delay: 0s; }
+        .emojis span:nth-child(4) { top: 28%;left: 70%; animation-duration: 14s; animation-delay: 0s; }
+        .emojis span:nth-child(5) { top: 78%;left: 90%; animation-duration: 16s; animation-delay: 0s; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="background"></div>
+        <div class="emojis">
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+        </div>
+        <div class="content">
+            <h1>What do you want for your birthday gift?</h1>
+            <p>Select an option below:</p>
+            <button onclick="selectOption(1)">Kelly Gerardi , watch and Chocolates</button><br><br>
+            <button onclick="selectOption(2)">Kelly Gerardi, watch and Flowers</button><br><br>
+            <button onclick="selectOption(3)">Kelly Gerardi, watch and Massage (naughty wala)</button><br><br>
+            <button onclick="selectOption(4)">Sab Kuchhhhhh aur ek Spank bhi</button><br><br>
+            <button onclick="nextPage()">gift select ho gaya ho to aage badhe ???</button>
+        </div>
+    </div>
+   
+    <script>
+        function selectOption(option) {
+            alert('Mujhe pata tha, Landour me sab milega kyutiee ko!');
+        }
+        function nextPage() {
+            window.location.href = 'http://127.0.0.1:5500/page3.html'; // Replace with your next page URL
+        }
+    </script>
+</body>
+</html>

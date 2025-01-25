@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Love Letter</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffc0cb, #fff);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #ffc0cb, #ff99cc, #ff66b2, #fff);
+        }
+
+        .content {
+            position: relative;
+            color: #333;
+            z-index: 1;
+            width: 80%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px #ff66b2;
+            color: #ff66b2;
+        }
+
+        .content p {
+            margin: 1em 0;
+            color: #555;
+        }
+
+        .ribbon {
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 40px;
+            background: linear-gradient(45deg, #ff66b2, #ff99cc);
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+        }
+
+        .ribbon::before, .ribbon::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #ff66b2;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .emojis {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .emojis span {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 10s linear infinite;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .emojis span:nth-child(1) {top: 20%; left: 10%; animation-duration: 8s; }
+        .emojis span:nth-child(2) { top: 30%;left: 30%; animation-duration: 10s; animation-delay: 0s; }
+        .emojis span:nth-child(3) {top: 80%;left: 50%; animation-duration: 12s; animation-delay: 0s; }
+        .emojis span:nth-child(4) { top: 91%;left: 70%; animation-duration: 14s; animation-delay: 0s; }
+        .emojis span:nth-child(5) { top: 48%;left: 90%; animation-duration: 16s; animation-delay: 0s; }
+        .emojis span:nth-child(1) {top: 84%; left: 10%; animation-duration: 8s; }
+        .emojis span:nth-child(2) { top: 67%;left: 30%; animation-duration: 10s; animation-delay: 0s; }
+        .emojis span:nth-child(3) {top: 80%;left: 50%; animation-duration: 12s; animation-delay: 0s; }
+        .emojis span:nth-child(4) { top: 28%;left: 70%; animation-duration: 14s; animation-delay: 0s; }
+        .emojis span:nth-child(5) { top: 78%;left: 90%; animation-duration: 16s; animation-delay: 0s; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="background"></div>
+        <div class="emojis">
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+            <span>❤️</span>
+        </div>
+        <div class="content">
+            <div class="ribbon">dhyaan dijiye</div>
+           
+            <p>
+        
+
+                I wish more than anything that I could be with you today to celebrate this paawan avsar. You mean everything to me, and every single moment when i am not with you makes me miss you more than i can ever express. I just can’t wait for the day jab distance ek problem nahi hoga and we can celebrate every birthday together, creating the most beautiful memories.
+                
+                I promise you that our life is going to be so fuckin magical, filled with love, laughter, and endless adventures. I’m counting down the days to our trip .it’s going to be just the beginning of all the amazing journeys we’ll share. You are my everything, and I am so grateful for you every single day with me AASTHA MISHRA.
+                
+              
+            </p>
+            <p>
+               
+            </p>
+            <p>
+               
+            </p>
+            <p>
+                Happy Birthday. I hope this year brings you everything you’ve dreamed of, and more. I will always be here for you, no matter the distance.  Here’s to you, my Delhi queen. I love you with all my heart. 🥰💖
+            </p>
+           
+            <button onclick="nextPage()">nexttttt</button>
+        </div>
+    </div>
+   
+    <script>
+        function selectOption(option) {
+           
+        }
+        function nextPage() {
+            window.location.href = 'http://127.0.0.1:5500/page4.html'; // Replace with your next page URL
+        }
+    </script>
+</body>
+</html>
